@@ -1,0 +1,9 @@
+ version: "0.1.0"
+    pre_ci_boot: 
+        image: index.alauda.cn/alaudademo11/piggymetricsiggyjava 
+        tag: latest
+
+    ci:
+        - cp  account-service/alaudaci/settings.xml  /etc/maven/
+        - cd  account-service
+        - mvn clean package 
