@@ -1,4 +1,5 @@
-FROM java:8-jre
+#FROM java:8-jre
+FROM index.alauda.cn/alaudademo11/piggymetricsiggyjava
 MAINTAINER Alexander Lukyanchikov <sqshq@sqshq.com>
 
 ADD ./target/account-service.jar /app/
